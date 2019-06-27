@@ -17,8 +17,8 @@ public class ChangeBackgroundActivity extends AppCompatActivity {
         setContentView(R.layout.activity_change_background);
     }
 
-    public void onGoClick(View view) {
-        View mainView = findViewById(android.R.id.content);
+    public void onGoClick(View view) { // btnGo had spelling error in onClick
+        View mainView = findViewById(android.R.id.content); // Added content id to View and made non clickable
         mainView.setBackgroundColor(getNextColor());
     }
 
